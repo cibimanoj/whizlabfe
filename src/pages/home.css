@@ -1,0 +1,36 @@
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 30%;
+  height: 40%;
+}
+.homeContent {
+    margin: 10rem;
+    font-family: Montserrat;
+}
+h1 {
+  font-weight: 700;
+}
+p {
+  color: black;
+}
+span {
+  background: -webkit-linear-gradient(rgb(255, 68, 0), rgb(244, 146, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .logo img{
+     width:80%;
+     height:50%
+    }
+    .homeContent {
+        font-size:16px;
+        margin:1rem
+    }
+  }
