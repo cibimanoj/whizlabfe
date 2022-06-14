@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import {useSelector} from 'react-redux'
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import NotFound from "./components/NotFound";
 function App() {
   const isLogged=useSelector(state=>state.isLogged)
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/edit-task" exact element={<EditTask />} />
         <Route exact path="/profile"  element={<Profile />} />
         <Route exact path="/update-profile" element={<UpdateProfile />} />
+        <Route exact path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
